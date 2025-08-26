@@ -53,9 +53,9 @@ describe("Calculadora", () => {
     expect(resultado).toBe(5);
   });
 
-  test("Deve lançar um erro ao dividir por zero", () => {
+  test("Divisão por zero não é permitida!", () => {
     expect(() => {
         dividir(10, 0);
-    }).toThrowError("Divisão por zero não é permitida.");
+    }).toThrow("Divisão por zero não é permitida!");
   });
 });

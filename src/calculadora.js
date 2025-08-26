@@ -17,7 +17,7 @@ export function multiplicar(a,b) {
 // Função para testar a divisão
 export function dividir(a, b) {
     if (b == 0) {
-        throw new Error("Divisão por zero não é permitida.");
+        throw new Error("Divisão por zero não é permitida!");
     }
     return a / b;
 }
